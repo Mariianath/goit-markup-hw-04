@@ -107,17 +107,36 @@ address {
 }
 
 .contact-ithem {
+  display: flex;
+  margin: 0px;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.contact-ithem:hover,
-.contact-ithem:focus {
-  color: var(--accent-color);
+
+.icon-header {
+  fill: currentColor;
+  max-width: 16px;
+  max-height: 12px;
+  margin-right: 10px;
 }
 
+.icon-phone {
+  max-width: 10px;
+  max-height: 16px;
+}
+.contact-ithem:hover,
+.contact-ithem:focus,
+.icon-header:hover,
+.icon-header:focus,
+.icon-header-phone:hover,
+.icon-header-phone:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 /*======header style ends===*/
 /*======main section style starts===*/
 /*hero*/
@@ -182,11 +201,22 @@ address {
   display: flex;
 }
 .feature-ithem {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   width: 270px;
 }
 .feature-ithem:not(:last-child) {
   margin-right: 30px;
+}
+.feature-icon {
+  background-color: #f5f4fa;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 .feature-title {
   font-weight: 700;
@@ -381,6 +411,8 @@ address {
 .button-work:hover {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*our results*/
@@ -393,6 +425,11 @@ address {
 .work-ithem {
   width: 370px;
   /* border: 1px solid rgba(238, 238, 238, 1);*/
+}
+.work-ithem:focus,
+.work-ithem:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-box {
   padding: 20px 24px;
