@@ -123,7 +123,6 @@ address {
 /*hero*/
 .hero-container {
   background: #2f303a;
-  /*width: 1200px;*/
   padding: 200px 0;
 }
 .overlay {
@@ -286,6 +285,12 @@ address {
   color: var(--secondary-text-color);
   /*text-align: center;*/
   letter-spacing: 0.03em;
+}
+
+/*======Our Clients====*/
+.clients-sction {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*======main section style ends===*/
 /*======footer style starts===*/
