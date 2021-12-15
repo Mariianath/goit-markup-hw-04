@@ -320,33 +320,26 @@ address {
 }
 .clients-ithems {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.client-ithem {
-  width: 170px;
-  height: 92px;
-  fill: cyan;
-}
 .client-ithem:not(:last-child) {
   margin-right: 30px;
 }
 .client-link {
-  display: flex;
-  margin: 0px;
-  align-items: center;
   color: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 16px 32px;
 }
 
 .client-icon {
   fill: currentColor;
-  max-height: 52px;
+  height: 92px;
+  width: 170px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-.client-link:hover,
-.client-link:focus {
+.client-icon:hover,
+.client-icon:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
