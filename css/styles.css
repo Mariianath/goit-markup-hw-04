@@ -369,6 +369,8 @@ address {
 /*======main section style ends===*/
 /*======footer style starts===*/
 .footer {
+  width: 1600px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   background-color: #2f303a;
@@ -458,7 +460,19 @@ address {
   height: 20px;
   fill: currentColor;
 }
-
+/*.net-link {
+  display: block;
+  color: #fff;
+}
+.network-icon {
+  width: 44px;
+  height: 44px;
+  fill: currentColor;
+  padding: 12px 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}*/
 .net-link:hover,
 .net-link:focus {
   border: 0.5px solid var(--accent-color);
