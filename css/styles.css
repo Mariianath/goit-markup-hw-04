@@ -256,10 +256,6 @@ address {
   margin-right: 30px;
 }
 /*Team section*/
-.practice-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .company-desc {
   font-weight: 700;
   font-size: 36px;
@@ -318,9 +314,42 @@ address {
 }
 
 /*======Our Clients====*/
-.clients-sction {
+.clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.clients-ithems {
+  display: flex;
+  justify-content: center;
+}
+
+.client-ithem {
+  width: 170px;
+  height: 92px;
+  fill: cyan;
+}
+.client-ithem:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.client-icon {
+  fill: currentColor;
+  max-height: 52px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 /*======main section style ends===*/
 /*======footer style starts===*/
