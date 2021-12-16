@@ -190,10 +190,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/*features*/
-/*.hidden {
-  color: rgba(255, 0, 0, 0);
-}*/
+
 .feature-container {
   padding-top: 94px;
 }
@@ -201,7 +198,6 @@ address {
   display: flex;
 }
 .feature-ithem {
-  /*box-sizing: border-box;*/
   width: 270px;
 }
 .feature-ithem:not(:last-child) {
@@ -227,12 +223,6 @@ address {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
-/*.shadow {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}*/
 
 .feature-text {
   font-size: 14px;
@@ -318,14 +308,18 @@ address {
   justify-content: center;
 }
 .team-net-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  padding: 12px;
   color: rgba(175, 177, 184, 1);
 }
 .team-network-icon {
   fill: currentColor;
-  height: 44px;
-  width: 44px;
-  padding: 12px;
+  height: 20px;
+  width: 20px;
 }
 .team-net-link:hover,
 .team-net-link:focus {
@@ -343,12 +337,19 @@ address {
   display: flex;
   justify-content: space-between;
 }
-
+.client-ithem {
+  height: 92px;
+  width: 170px;
+}
 .client-ithem:not(:last-child) {
   margin-right: 30px;
 }
 .client-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -356,9 +357,8 @@ address {
 
 .client-icon {
   fill: currentColor;
-  height: 92px;
-  width: 170px;
-  padding: 16px 32px;
+  height: 60px;
+  width: 106px;
 }
 .client-link:hover,
 .client-link:focus {
@@ -369,23 +369,23 @@ address {
 /*======main section style ends===*/
 /*======footer style starts===*/
 .footer {
-  width: 1600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   background-color: #2f303a;
   color: #ffffff;
-  padding: 60px 215px;
-  /*padding-top: 60px;
-  padding-bottom: 60px;*/
-}
-.container-footer {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
+  padding: 60px 0;
 }
 
-.container-footer:not(:last-child) {
+.container-footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer-section:not(:last-child) {
   margin-right: 70px;
 }
 .site-logo-footer {
@@ -430,6 +430,7 @@ address {
 }
 .invitation {
   text-transform: uppercase;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
@@ -450,9 +451,7 @@ address {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 0.5px solid transparent;
   border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .network-icon {
@@ -460,22 +459,10 @@ address {
   height: 20px;
   fill: currentColor;
 }
-/*.net-link {
-  display: block;
-  color: #fff;
-}
-.network-icon {
-  width: 44px;
-  height: 44px;
-  fill: currentColor;
-  padding: 12px 12px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}*/
+
 .net-link:hover,
 .net-link:focus {
-  border: 0.5px solid var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .twit {
   background-color: var(--accent-color);
