@@ -307,6 +307,9 @@ address {
   display: flex;
   justify-content: center;
 }
+.team-neworks-ithem:not(:last-child) {
+  margin-right: 10px;
+}
 .team-net-link {
   display: flex;
   justify-content: center;
@@ -462,6 +465,7 @@ address {
 
 .net-link:hover,
 .net-link:focus {
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .twit {
@@ -522,10 +526,16 @@ address {
   width: 370px;
   /* border: 1px solid rgba(238, 238, 238, 1);*/
 }
-.work-ithem:focus,
+/*.work-ithem:focus,
 .work-ithem:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}*/
+.work-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--primary-text-color);
 }
 .work-box {
   padding: 20px 24px;
@@ -554,4 +564,10 @@ address {
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
 }
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /*=====Portfolio ends====*/
